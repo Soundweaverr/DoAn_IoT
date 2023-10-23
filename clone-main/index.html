@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Monitor System</title>
+    <link rel="icon" href="./assets/image/xicon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <!-- <div class="intro">
+      <div class="intro_left">
+        <p>WATER</p>
+        <p class="intro_left_system">SYS</p>
+      </div>
+      <div class="intro_right">
+        <p>MONITORING</p>
+        <p class="intro_right_system">TEM</p>
+      </div>
+      <span class="material-symbols-outlined"> settings </span>
+    </div> -->
+    <div id="main">
+      <div class="chart-sensor">
+        <div class="sensor_left">
+          <div class="sensor sersor-1">
+            <div class="sensor-display pink">
+              <span
+                class="material-symbols-outlined sensor-display-change_size"
+                title="Zoom in">
+                open_in_full
+              </span>
+              <div>
+                <canvas
+                  id="chart-line-tasks"
+                  class="chart-canvas"
+                  height="240"></canvas>
+              </div>
+            </div>
+            <div class="sensor-body">
+              <h3 class="sensor-name">
+                <span class="material-symbols-outlined"> humidity_low </span>
+                Humidity
+              </h3>
+              <p class="sensor-description">It's normal</p>
+            </div>
+          </div>
+          <div class="sensor sersor-2">
+            <div class="sensor-display green">
+              <span
+                class="material-symbols-outlined sensor-display-change_size"
+                title="Zoom in">
+                open_in_full
+              </span>
+              <div>
+                <canvas
+                  id="chart-line-tasks2"
+                  class="chart-canvas"
+                  height="240"></canvas>
+              </div>
+            </div>
+            <div class="sensor-body">
+              <h3 class="sensor-name">
+                <span class="material-symbols-outlined"> wind_power </span>
+                Wind Speed
+              </h3>
+              <p class="sensor-description">It's strong</p>
+            </div>
+          </div>
+        </div>
+        <div class="status">
+          <h3 class="status_heading">Water status</h3>
+          <div class="status_infomation">
+            <p class="status_humidity">
+              <span class="topic">Humidity:</span>
+              <span class="value">81</span>
+              %
+            </p>
+            <p class="status_temperature">
+              <span class="topic">Temperature:</span>
+              <span class="value">28</span>
+              ℃
+            </p>
+            <p class="status_wind-speed">
+              <span class="topic">Wind speed:</span>
+              <span class="value">7</span>
+              km/h
+            </p>
+            <p class="status_wave-height">
+              <span class="topic">Wave height:</span>
+              <span class="value">0.3</span>
+              m
+            </p>
+          </div>
+          <div class="status-sent">
+            <span class="material-symbols-outlined status-icon-history">
+              schedule_send
+            </span>
+            sent at
+            <span class="status-sent-datetime"> 10/6/2023, 8:25:58 PM </span>
+          </div>
+          <div class="status-updatetime">
+            <span class="material-symbols-outlined status-icon-history">
+              update
+            </span>
+            updated
+            <span class="status-updatetime-calcu"> 10 seconds ago </span>
+          </div>
+        </div>
+        <div class="sensor_right">
+          <div class="sensor sersor-3">
+            <div class="sensor-display blue">
+              <span
+                class="material-symbols-outlined sensor-display-change_size"
+                title="Zoom in">
+                open_in_full
+              </span>
+              <div>
+                <canvas
+                  id="chart-line-tasks3"
+                  class="chart-canvas"
+                  height="240"></canvas>
+              </div>
+            </div>
+            <div class="sensor-body">
+              <h3 class="sensor-name">
+                <span class="material-symbols-outlined">
+                  device_thermostat
+                </span>
+                Temperature
+              </h3>
+              <p class="sensor-description">It's so hot</p>
+            </div>
+          </div>
+          <div class="sensor sersor-4">
+            <div class="sensor-display red">
+              <span
+                class="material-symbols-outlined sensor-display-change_size"
+                title="Zoom in">
+                open_in_full
+              </span>
+              <div>
+                <canvas
+                  id="chart-line-tasks4"
+                  class="chart-canvas"
+                  height="240"></canvas>
+              </div>
+            </div>
+            <div class="sensor-body">
+              <h3 class="sensor-name">
+                <span class="material-symbols-outlined"> waves </span>
+                Salinity
+              </h3>
+              <p class="sensor-description">It's normal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
